@@ -25,16 +25,15 @@ namespace FizzBuzzConsoleApp
         {
             for (var i = start; i < start + increment; i++)
             {
-                var mod4 = i % 4 == 0;
                 var mod6 = i % 6 == 0;
+                var mod4 = i % 4 == 0;
 
-                if (mod4 && mod6)
+                else if (mod4 && mod6)
                     output("FizzBuzz");
-                else if (mod4)
-                    output("Fizz");
                 else if (mod6)
                     output("Buzz");
-                else
+                else if (mod4)
+                    output("Fizz");
                     output(i.ToString());
 
 
