@@ -28,12 +28,13 @@ namespace FizzBuzzConsoleApp
                 var mod6 = i % 6 == 0;
                 var mod4 = i % 4 == 0;
 
-                else if (mod4 && mod6)
+                if (mod4 && mod6)
                     output("FizzBuzz");
                 else if (mod6)
                     output("Buzz");
                 else if (mod4)
                     output("Fizz");
+                else
                     output(i.ToString());
 
 
